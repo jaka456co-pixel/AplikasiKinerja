@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Saya</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+
+        .container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        /* Trik menyembunyikan banner Google Apps Script */
+		iframe {
+			position: absolute;
+			top: -15px; /* Menarik ke atas untuk sembunyikan banner */
+			left: 0;
+			width: 100%;
+			height: calc(100% + 28px); /* Menambah tinggi persis sama dengan yang ditarik ke atas */
+			border: none;
+		}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <iframe 
+            src="https://script.google.com/macros/s/AKfycbzB7wnE9BUETp0WsQJz4xHIZi7o7_DtLhrkGJMkKC_VSsHLD2t8AOkVOd_nMAUN6Q/exec" 
+            allow="camera; microphone; geolocation"
+            frameborder="0">
+        </iframe>
+    </div>
+
+</body>
+</html>
